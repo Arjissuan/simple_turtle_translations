@@ -5,7 +5,9 @@ def powitanie():
     hello = "Witaj w naszym tłumaczeniu pakietu turtle.\n" \
             "Razem z nim nauczymy cię podstaw programowania\n" \
             "Zacznijmy od wpisania funkcji: pomoc()\n" \
-            "Możesz ją wywołać w każdej chwili.\n"
+            "Możesz ją wywołać w każdej chwili.\n" \
+            "Najważniejsze aby nie zrażać się błędami, zwłaszcza w programowaniu\n" \
+            "Każdy błąd nauczy Cię czegoś nowego.\n"
     return hello
 def pomoc():
     with open("instrukcja.txt", "r") as file:
@@ -18,7 +20,7 @@ def czyszczenie_obrazu():
 def usun():
     return turtle.clear()
 
-class Nazwij:
+class Imie_mojego_zolwia:
     kolory_linii = ["czerwony", "zielony", "czarny","losowy"]
     shapes = ["turtle"]
     def __init__(self):
@@ -36,7 +38,7 @@ class Nazwij:
                 print("Zły kolor, dostępne to {}".format(self.kolory_linii))
         except:
             print("Ta funkcja przyjmuje wartości w postaci danych string.\n"
-                  " Na przykład:Imie_żółwia.personalizacja(\"turtle\", \"czerwony\")"
+                  " Na przykład:Marek.personalizacja(\"turtle\", \"czerwony\")"
                   f"dostepne kolory i kształy:{self.kolory_linii}, {self.shapes}")
 
     def w_lewo(self, ile):
