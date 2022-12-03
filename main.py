@@ -4,9 +4,12 @@ from script import *
 
 
 if __name__ == "__main__":
-    try:
-        print(powitanie())
-        Marek = Imie_mojego_zolwia()
-    except NameError:
-        print("Niepoprawna komenda")
+    print(powitanie())
+    skrin = turtle.Screen()
+    skrin.bgcolor("light green")
+    skrin.title("Żółwie BioSKNu")
+    Marek = Imie_mojego_zolwia()
+    Marek.personalizacja("turtle", "black")
+
+
 

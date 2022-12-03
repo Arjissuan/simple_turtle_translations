@@ -1,9 +1,9 @@
 Jak zacząć?
-Wybierz imię dla swojego żółwia, bądź pobaw się z Markiem.
-To jest nasz żółwik który pomoże na początku.
+Zacznimy od skorzystania z pomocy Marka, jest on żółwiem który się pojawił
+na środku nowo otwartego ekranu.
 Markowi wydasz komendy jak do_przodu(), w_lewo(), w_prawo() i inne.
 Zacznijmy od kształtu którego nauczyliśmy Marka.
-Wpisz Marek.osmiokat()
+Wpisz komendę: Marek.osmiokat()
 
 Nazwać swojego żółwia poprzez komende:
 Ania = Imie_mojego_zolwia()
@@ -11,17 +11,18 @@ Ania wtedy jak Marek stanie się klasą, którą można sterować za pomocą fun
 do niej przyposanych.
 
 Lista funkcji klasy(czyli naszego żółwia, pamietaj aby przed kropka wstawic imie swojego zolwia!!!):
-Marek.personalizacja(self, shape, kolor):
-Marek.w_lewo(self, ile)
-Marek.do_przodu(self, ile)
-Marek.w_prawo(self, ile)
-Marek.osmiokat(self)
-Marek.wielokat(self, L_or_P, angle, speed, many)
-Marek.pen(self, rysowanie=True, kolor=None)
+Marek.personalizacja(shape, kolor):
+Marek.w_lewo(ile)
+Marek.do_przodu(ile)
+Marek.w_prawo(ile)
+Marek.osmiokat()
+Marek.benzen()
+Marek.wielokat(L_or_P, angle, speed, many)
+Marek.pen(rysowanie=True, kolor=None)
+Marek.resetowanie()
+Marek.usun_obrazek()
 
-Inne funkcje które pomogą:
-   czyszczenie_obrazu()
-   usun()
+
 
 Jeśli uważasz że już rozgryzłeś wszystko, możesz skorzystać z możliwości pętli. Instrukcje pętli zawsze są po wcięciu!
 for item in range(10):

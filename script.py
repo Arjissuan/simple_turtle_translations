@@ -15,16 +15,11 @@ def pomoc():
             print(item)
 
 
-def czyszczenie_obrazu():
-    return turtle.reset()
-
-def usun():
-    return turtle.clear()
-
 class Imie_mojego_zolwia:
-    kolory_linii = ["czerwony", "zielony", "czarny","żółty","losowy"]
-    shapes = ["turtle", ]
-    tru_clours = ["red", "green", "black", "yellow", ]
+    kolory_linii = ["czerwony", "fioletowy","zielony", "czarny","żółty", "pomarańczowy","losowy"]
+    tru_clours = ["red", "purple","green", "black", "yellow", "orange", ]
+    shapes = ["turtle", "arrow", "classic", "circle"]
+
     def __init__(self):
         self.zolw = turtle.Turtle()
 
@@ -53,6 +48,9 @@ class Imie_mojego_zolwia:
 
     def w_prawo(self, ile):
         self.zolw.right(ile)
+
+    def do_tylu(self, ile):
+        self.zolw.backward(ile)
 
     def osmiokat(self):
         for item in range(9):
@@ -91,3 +89,36 @@ class Imie_mojego_zolwia:
         else:
             return "Ta funkcja jest aby włączyć lub wyłączyć rysowanie, uzyj jej Imie.pen() gdzie argumenty to True aby rysowac i false aby przestac\n." \
                    f"Kolory zaś to {self.kolory_linii}"
+    def znaczek(self):
+        self.zolw.stamp()
+
+    def benzen(self):
+        for x in range(180):
+            self.zolw.pencolor(self.tru_clours[x%6])
+            self.zolw.width(x//100 +1)
+            self.zolw.forward(x)
+            self.zolw.left(59)
+
+    def kwadrat(self):
+        for i in range(4):
+            self.zolw.forward(40)
+            self.zolw.right(90)
+
+    def sqrfunc(self, size):
+        for i in range(4):
+            self.zolw.fd(size)
+            self.zolw.lt(size)
+            size = size -5
+
+    def konczymy(self):
+        turtle.bye()
+        exit()
+
+    def resetowanie(self):
+        self.zolw.reset()
+
+    def usun_obrazek(self):
+        self.zolw.clear()
+
+
+
