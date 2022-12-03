@@ -11,15 +11,15 @@ Ania wtedy jak Marek stanie się klasą, którą można sterować za pomocą fun
 do niej przyposanych.
 
 Lista funkcji klasy(czyli naszego żółwia, pamietaj aby przed kropka wstawic imie swojego zolwia!!!):
-.personalizacja(self, shape, kolor):
-.w_lewo(self, ile)
-.do_przodu(self, ile)
-.w_prawo(self, ile)
-.osmiokat(self)
-.wielokat(self, L_or_P, angle, speed, many)
-.def pen(self, rysowanie=True, kolor=None)
+Marek.personalizacja(self, shape, kolor):
+Marek.w_lewo(self, ile)
+Marek.do_przodu(self, ile)
+Marek.w_prawo(self, ile)
+Marek.osmiokat(self)
+Marek.wielokat(self, L_or_P, angle, speed, many)
+Marek.pen(self, rysowanie=True, kolor=None)
 
-   inne funkcje które pomogą:
+Inne funkcje które pomogą:
    czyszczenie_obrazu()
    usun()
 
